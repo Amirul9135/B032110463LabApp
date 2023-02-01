@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/nav_l2"
+        android:title="Lab 2"
+        android:icon="@drawable/ic_baseline_camera_alt_24"/>
+
+    <item
+        android:id="@+id/nav_l3"
+        android:title="Lab 3"
+        android:icon="@drawable/ic_baseline_recycling_24"/>
+    <item
+        android:id="@+id/nav_l4"
+        android:title="lab 4+5+6 + SQLite"
+        android:icon="@drawable/ic_baseline_app_registration_24"/>
+
+    <item
+        android:id="@+id/nav_l7"
+        android:title="Lab 7"
+        android:icon="@drawable/ic_baseline_tune_24"/>
+    <item
+        android:id="@+id/nav_search"
+        android:title="Search Student"
+        android:icon="@drawable/ic_baseline_manage_search_24"/>
+</menu>

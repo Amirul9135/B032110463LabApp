@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SearchStudent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vmid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+        <EditText
+            android:id="@+id/edtStudID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Search by Stud ID"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtStudID" />
+
+
+        <TextView
+            android:id="@+id/lblStudName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Student Name:"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtVwStudName2"
+            app:layout_constraintEnd_toStartOf="@+id/txtVwStudName2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtVwStudName2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblStudName"
+            app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
+
+
+        <TextView
+            android:id="@+id/lblStudNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Student No:"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtVwStudNo"
+            app:layout_constraintEnd_toStartOf="@+id/txtVwStudNo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtVwStudNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblStudNo"
+            app:layout_constraintTop_toBottomOf="@+id/txtVwStudName2" />
+
+
+        <TextView
+            android:id="@+id/lblStudGender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Student Gender:"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtVwStudGender"
+            app:layout_constraintEnd_toStartOf="@+id/txtVwStudGender"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtVwStudGender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblStudGender"
+            app:layout_constraintTop_toBottomOf="@+id/lblStudNo" />
+
+
+        <TextView
+            android:id="@+id/lblStudOrin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Student Origin:"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtVwStudState"
+            app:layout_constraintEnd_toStartOf="@+id/txtVwStudState"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtVwStudState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblStudOrin"
+            app:layout_constraintTop_toBottomOf="@+id/lblStudGender" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
